@@ -1,2 +1,56 @@
-# BunnyEra-SuperApp
-BunnyEra SuperApp — A desktop platform integrating cross-border e-commerce services, plugin center, AI assistant, account security, and resource pool. Inspired by Ziniao Browser and AMZ123.
+# BunnyEra SuperApp
+
+BunnyEra SuperApp 是一个桌面集成应用，类似紫鸟浏览器和 AMZ123，专为跨境电商卖家打造。它提供统一入口，集成电商工具、跨境服务、AI助手、插件中心和资源池。
+
+---
+
+## 🎯 应用定位
+- **类型**：桌面集成应用（Electron 框架）
+- **目标**：为跨境电商卖家提供一站式工具导航和账号管理
+- **模式**：跳转型（外部官网） + 内嵌型（BrowserView）
+
+---
+
+## 📂 文件夹结构
+D:\BunnyEraSuperApp
+├─ main.js        # 主进程入口，负责窗口创建 ├─ index.html     # 界面入口，左侧导航 + 右侧面板 ├─ renderer.js    # 前端逻辑，处理跳转和交互 ├─ styles.css     # 样式文件，统一UI风格 ├─ modules\       # 内置功能模块（AI助手、日志、资源池） ├─ configs\       # 配置文件（账号、插件、节点） ├─ logs\          # 日志记录 └─ assets\        # 图标、UI资源
+
+
+---
+
+## 🖥️ 导航栏入口
+左侧导航栏固定为以下几个入口：
+- 全球开店  
+- 跨境服务  
+- 插件中心  
+- 应用中心  
+- 跨境导航  
+- 直播资讯  
+- 活动专区  
+
+---
+
+## 🌐 跳转规则
+- **外部跳转**：点击按钮 → 使用系统浏览器打开目标官网（如 AMZ123、紫鸟开放平台）。  
+- **内嵌显示**：使用 Electron 的 `BrowserView` 在右侧面板直接显示网页内容。  
+- **账号统一**（可选）：用户登录 BunnyEra 账号后，跳转时可带上身份信息（类似单点登录）。
+
+---
+
+## 🚀 使用方法
+1. 下载并安装 BunnyEra SuperApp  
+2. 打开应用，注册/登录 BunnyEra 账号（可选）  
+3. 点击左侧导航，进入对应功能或跳转官网  
+4. 所有操作在一个桌面入口完成，不需要自己找网址  
+
+---
+
+## 🔧 扩展功能
+- **插件中心**：未来可以开放 API，让第三方开发者扩展功能  
+- **安全管理**：账号托管、权限控制、日志追溯  
+- **资源池**：虚拟卡、手机号、邮箱统一管理  
+
+---
+
+## 📜 License
+MIT License （可根据需要修改）
